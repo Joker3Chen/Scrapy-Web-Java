@@ -1,0 +1,38 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "static/image/icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "static/style/content_style.css" ],
+      "exclude_matches": [ "*://ratewrite.tmall.com/*", "*://rate.taobao.com/*", "*://passport.taobao.com/*", "*://buy.taobao.com/*", "*://buy.tmall.com/*" ],
+      "js": [ "static/zepto.min.js", "static/content_script.js" ],
+      "matches": [ "*://*.taobao.com/*", "*://*.tmall.com/*", "*://*.fliggy.com/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "static/mobile_script.js" ],
+      "matches": [ "*://*.m.taobao.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+   "description": "茶友会是自动为你查找淘宝优惠券，自动签到领淘金币、飞猪里程的多功能购物助手",
+   "icons": {
+      "128": "static/image/icon@128.png",
+      "16": "static/image/icon@16.png",
+      "48": "static/image/icon@48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqFqaUbTALN7eNlXqFLIFPdhs2Ia85goXcM9QSGHOr9ZG8CK3hH/003SNfwIRB09k8K70gH4GHzYy/ytbqyG/HUkiJKN7BMxi2YsSR8rniZFXk1syWlrMw1Dr92VRoV5zaEsXK2GDsIy1HxLDwo4caDY2fbo0MK0QNbxqEOxi9HVbbxipjzG3J+gT/p/lgcSfGOzEqSRc+Akvyx7OPLUCPxen84+zti5Dq90XwXRCeG3Zj5OOWcC4adtkrrsS1F9hZwaqnm7BRX2ky+D+TuPKHsZB9BPt0cil4/WyLiVEXi+WYVfQeFGv4fBkG2hh8JcJUCa7EjI4JbxGxlqoP4XSlQIDAQAB",
+   "manifest_version": 2,
+   "name": "茶友会 - 淘宝查券助手",
+   "permissions": [ "*://*.taobao.com/*", "*://*.tmall.com/*", "*://*.fliggy.com/*", "webRequest", "webRequestBlocking", "alarms", "tabs", "contextMenus", "notifications" ],
+   "short_name": "茶友会",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.2.5",
+   "web_accessible_resources": [ "static/touch-emulator.js" ]
+}

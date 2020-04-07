@@ -1,0 +1,38 @@
+{
+   "background": {
+      "page": "background.html",
+      "persistent": true
+   },
+   "browser_action": {
+      "default_icon": "static/image/jjb.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "static/style/content_style.css" ],
+      "js": [ "static/jquery.min.js", "static/content_script.js" ],
+      "matches": [ "*://*.jd.com/*", "*://*.jd.hk/*" ],
+      "run_at": "document_end"
+   }, {
+      "all_frames": true,
+      "js": [ "static/mobile_script.js" ],
+      "matches": [ "*://*.m.jd.com/*", "*://m.jr.jd.com/*", "*://wq.jd.com/*", "*://wqs.jd.com/*", "*://msitepp-fm.jd.com/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';",
+   "description": "京价保（京价宝）是自动为你申请京东价格保护，自动签到领京豆、钢镚的多功能京东助手",
+   "icons": {
+      "128": "static/image/128.png",
+      "16": "static/image/16.png",
+      "48": "static/image/48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnCwJCcIH8prXgGWZqtIvlFSKMUqtjTfKw28/BxVSCFPy2KP24WnYGnqLS7bk4mnkf1OSoriiuhbePhWcqCu1+mDQ02dZow9G1a/s8kOAgsMg5dmueOdS3TZ0zQrw1GEfMKFZrMlqhMEXUT8ctyD2VjPVFD6Sp11b54pQqNGM4PUkS3Cjulkk1S3DGtITFtwFgU+hvByJqzX4LQEgG/LILpmV5SWPJGp+m5rXiHNT5ghfJuugc4NX26CjsrHxDiB51+I4yjvCSQaAZ5Fyl7ifpeDjGBmF32JA1kVtIh7tF3+1M6Q0mORqvMPODNqsILC+QFS4Og/yQhbD6NPvXJHXrQIDAQAB",
+   "manifest_version": 2,
+   "name": "京价保 - 京东价保助手",
+   "optional_permissions": [ "bookmarks" ],
+   "permissions": [ "*://*.jd.com/*", "*://*.jd.hk/*", "webRequest", "webRequestBlocking", "alarms", "tabs", "contextMenus", "notifications" ],
+   "short_name": "京价保",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.7.5",
+   "web_accessible_resources": [ "static/dialog-polyfill.js", "static/priceChart.js", "static/touch-emulator.js" ]
+}

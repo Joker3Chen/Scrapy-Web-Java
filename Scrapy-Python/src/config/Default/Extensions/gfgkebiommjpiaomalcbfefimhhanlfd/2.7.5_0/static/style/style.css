@@ -1,0 +1,322 @@
+.jjb iframe{
+    border: 0;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+
+.jjb-login{
+    cursor: pointer;
+    background: #4CAF50;
+    border: 1px solid #4CAF50;
+    display: block;
+    width: 96%;
+    height: 31px;
+    line-height: 31px;
+    color: #fff;
+    padding: 4px 2%;
+    font-size: 16px;
+    text-align: center;
+}
+
+.auto_login{
+    margin-bottom: 5px;
+}
+
+dialog {
+    position: fixed;
+    width: 50%;
+    max-width: 450px;
+    min-width: 400px;
+    min-height: 160px;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border: solid;
+    padding: 2em;
+    background: white;
+    color: black;
+    display: block;
+}
+
+dialog:not([open]) {
+    display: none;
+}
+
+dialog h3{
+    font-size: 16px;
+}
+
+dialog .consideration{
+    margin: 10px 0;
+    font-size: 15px;
+}
+dialog .consideration p {
+    margin-bottom: 5px;
+}
+
+dialog+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+._dialog_overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+dialog.message{
+    max-width: none;
+    min-width: 300px;
+    min-height: auto;
+    background: #84c460;
+    border-color: rgba(78, 162, 32,0.5);
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+dialog .green-text{
+    background-color: #85c360;
+    color: #fff;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+dialog .tips {
+    color: #999;
+    font-size: 12px;
+    color: #eee;
+    margin-top: 10px;
+}
+
+dialog.fixed {
+    position: fixed;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+dialog .actions{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+dialog .actions .forcedbuy {
+    margin-right: 15px;
+}
+
+dialog .admonish{
+    position: absolute;
+    bottom: -20px;
+    color: #333;
+    font-size: 12px;
+    left: 50%;
+    margin-left: -60px;
+    color: #999;
+    font-style: italic;
+}
+
+dialog .close {
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    padding: 5px;
+    font-size: 18px;
+    color: #555;
+    font-weight: 500;
+}
+
+
+#username_login .code-box img{
+    width: 150px;
+    height: 60px;
+    margin-left: -60px;
+}
+#input-code .icon-clear {
+    right: 140px;
+}
+
+#username_login .tips{
+    font-size: 12px;
+    padding: 2px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color: #666;
+}
+
+.jjbPriceChart{
+    position: static;
+    float: left;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #eee;
+}
+
+.jjbPriceChart .title {
+    font-size: 14px;
+    line-height: 24px;
+    height: 28px;
+    padding: 6px 10px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #eee;
+}
+
+.g2-tooltip{
+    position: absolute;
+    background: #ffffffe0;
+    border: 1px solid #dededec2;
+    padding: 1em 2em;
+    min-width: 180px;
+}
+
+.g2-tooltip .promotions li{
+    font-size: 12px;
+    margin-bottom: 0.5em;
+}
+
+.g2-tooltip .g2-tooltip-list li{
+    font-size: 14px;
+    margin-bottom: 0.5em;
+}
+
+.g2-tooltip .tag{
+    color: #df3033;
+    background: 0 0;
+    border: 1px solid #df3033;
+    padding: 2px 3px;
+    margin-right: 5px;
+    display: inline-block;
+    line-height: 16px;
+}
+
+.jjbPriceChart .provider {
+    padding: 3px 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+#jjbPriceChart{
+    width: 100%;
+    background: #fff;
+}
+
+#disablePriceChart{
+    float: right;
+    padding: 0px 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#jjbPriceChart .no_data,
+#jjbPriceChart .loading {
+    text-align: center;
+    padding: 20px;
+    background-position-y: top;
+    padding-top: 30px;
+    margin-top: 10px;
+}
+
+.first_area_md {
+    height: auto !important;
+    position: relative;
+}
+
+.first_area_md .jjbPriceChart{
+    margin-top: 20px;
+}
+
+.price_notice{
+    display: none;
+}
+
+.utm_source-notice{
+    text-align: center;
+    background: #fdedd2;
+    color: #947219;
+    padding: 0.2em .6em;
+}
+
+.utm_source-notice .report{
+    float: right;
+    cursor: pointer;
+    color: #cc1f1f;
+    background: #fff;
+    padding: 0px 10px;
+    border-radius: 2px;
+}
+
+.reportUtmSource .weui-dialog{
+    max-width: 500px;
+    background: #f8f8f8;
+}
+
+#specialPromotion {
+    width: 80%;
+    display: inline-block;
+    height: 22px;
+    line-height: 24px;
+}
+
+.special-promotion-item{
+    padding: 3px 10px;
+    vertical-align: middle;
+}
+
+.special-promotion-item a{
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.special-promotion-item .icon{
+    padding-right: 10px;
+    float: left;
+}
+
+
+#specialPromotion .promotions{
+    float: left;
+    width: 80%;
+}
+
+#specialPromotion .controller{
+    width: 20%;
+    float: right;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 8px 0px;
+}
+
+#specialPromotion .controller .item__child {
+    cursor: pointer;
+    min-width: 12px;
+    min-width: 1.2rem;
+    min-height: 4px;
+    min-height: 0.4rem;
+    display: block;
+    margin: 0 3px;
+    border: 1px solid #ddd;
+    background-color: #dddddd;
+}
+
+#specialPromotion .controller .item__child.on {
+    background-color:  #7abd53;
+}
+
+#specialPromotion .controller .item__child:hover {
+    background-color: #096
+}

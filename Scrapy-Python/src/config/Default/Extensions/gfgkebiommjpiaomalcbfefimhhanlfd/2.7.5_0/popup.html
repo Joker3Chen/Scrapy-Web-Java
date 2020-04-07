@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>京价保</title>
+    <meta name="viewport" content="width=800, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="static/style/popup_style.css">
+    <link rel="stylesheet" href="static/popup.css">
+  </head>
+  <body>
+    <div class="popup" id="popup">
+      <div id="app"></div>
+
+      <!-- 公众号 -->
+      <div id="wechatDialags">
+        <div class="js_dialog" style="opacity: 1;">
+          <div class="weui-mask"></div>
+          <div class="weui-dialog">
+            <div class="weui-dialog__hd">
+              <strong class="weui-dialog__title">关注京价保公众号</strong>
+            </div>
+            <span class="js-close">x</span>
+            <div class="weui-dialog__bd">
+              <img  class="jjb-official tippy" data-tippy-content="微信搜索“京价保”也可以关注"  alt="jjb-official" width="280">
+              <p class="tips">主要发布更新通知，亦可在公众号留言向开发者反馈。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 建议反馈 -->
+      <div id="feedbackDialags">
+        <div class="js_dialog" style="opacity: 1;">
+          <div class="weui-mask"></div>
+          <div class="weui-dialog">
+            <div class="weui-dialog__hd">
+              <strong class="weui-dialog__title">建议反馈</strong>
+            </div>
+            <span class="js-close">x</span>
+            <iframe id="feedbackIframe" frameborder="0" src=""></iframe>
+            <div class="weui-toast iframe-loading">
+              <i class="weui-loading weui-icon_toast"></i>
+              <p class="weui-toast__content">数据加载中</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 常见问题 -->
+      <div id="faqDialags">
+        <div class="js_dialog" style="opacity: 1;">
+          <div class="weui-mask"></div>
+          <div class="weui-dialog">
+            <div class="weui-dialog__hd">
+              <strong class="weui-dialog__title">常见问题</strong>
+            </div>
+            <span class="js-close">x</span>
+            <iframe id="faqIframe" src="" frameborder="0"></iframe>
+            <div class="weui-toast iframe-loading">
+              <i class="weui-loading weui-icon_toast"></i>
+              <p class="weui-toast__content">数据加载中</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- body 最后 -->
+    <script src="static/popup.js"></script>
+  </body>
+</html>

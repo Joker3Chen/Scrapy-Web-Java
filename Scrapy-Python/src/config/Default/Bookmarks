@@ -1,0 +1,923 @@
+{
+   "checksum": "890df54da1c83f69fd019e5e54be81c6",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "1",
+            "guid": "a4732f09-082c-431b-b216-f101f66b525e",
+            "id": "2",
+            "name": "百度",
+            "type": "url",
+            "url": "http://2143.new.favo.xpu93.com/"
+         }, {
+            "date_added": "1",
+            "guid": "644b1208-1c3f-495e-8c33-5d4748cbcb17",
+            "id": "3",
+            "name": "淘宝",
+            "type": "url",
+            "url": "http://2294.new.favo.xpu93.com/"
+         }, {
+            "date_added": "1",
+            "guid": "b2a4001e-bd7a-4a1e-8c97-982e7eca6c00",
+            "id": "4",
+            "name": "京东",
+            "type": "url",
+            "url": "http://2147.new.favo.xpu93.com/"
+         }, {
+            "date_added": "1",
+            "guid": "6d212e40-14de-4697-ad78-b38089f00506",
+            "id": "5",
+            "name": "天猫",
+            "type": "url",
+            "url": "http://2145.new.favo.xpu93.com/"
+         }, {
+            "date_added": "1",
+            "guid": "dd5b4160-ab28-4390-a9b1-226b5b003d7c",
+            "id": "6",
+            "name": "苏宁易购",
+            "type": "url",
+            "url": "http://1970.new.favo.xpu93.com/"
+         }, {
+            "date_added": "13188555758371113",
+            "guid": "98d99cb2-2759-430e-b2ba-64a979d8e04e",
+            "id": "7",
+            "meta_info": {
+               "last_visited_desktop": "13190712395927336"
+            },
+            "name": "《Qt基础教程之Qt学习之路》 - 欧阳磊 - CSDN博客",
+            "sync_transaction_version": "334",
+            "type": "url",
+            "url": "https://blog.csdn.net/mars_xiaolei/article/details/79424315"
+         }, {
+            "date_added": "13188618992000747",
+            "guid": "7afd869a-c2bf-4661-ab39-cfa9d601a454",
+            "id": "8",
+            "meta_info": {
+               "last_visited_desktop": "13197998374017603"
+            },
+            "name": "PDF解密 - 免费的在线PDF密码移除软件",
+            "sync_transaction_version": "472",
+            "type": "url",
+            "url": "https://smallpdf.com/cn/unlock-pdf"
+         }, {
+            "date_added": "13188835842070926",
+            "guid": "eccf82b8-1005-49f8-a2df-a79bc9d51df3",
+            "id": "9",
+            "meta_info": {
+               "last_visited_desktop": "13197286234709863"
+            },
+            "name": "QString->string->wstring->LPCWSTR - findumars - 博客园",
+            "sync_transaction_version": "467",
+            "type": "url",
+            "url": "http://www.cnblogs.com/findumars/p/5998411.html"
+         }, {
+            "date_added": "13188930339169680",
+            "guid": "3d79c68f-8ea4-4af1-a79a-f3fab5b07727",
+            "id": "10",
+            "meta_info": {
+               "last_visited_desktop": "13190043281701213"
+            },
+            "name": "文档中心--百度AI-百度AI开放平台",
+            "sync_transaction_version": "281",
+            "type": "url",
+            "url": "http://ai.baidu.com/docs#/ASR-Online-Python-SDK/top"
+         }, {
+            "date_added": "13188972559919866",
+            "guid": "8895ef7e-9156-405c-8fd0-e4eb0ad82b1c",
+            "id": "11",
+            "meta_info": {
+               "last_visited_desktop": "13199938917226685"
+            },
+            "name": "使用Python对WAV音乐重新采样 - Python小屋 - CSDN博客",
+            "sync_transaction_version": "582",
+            "type": "url",
+            "url": "https://blog.csdn.net/oh5W6HinUg43JvRhhB/article/details/82976024"
+         }, {
+            "date_added": "13188992843449429",
+            "guid": "2a36fc81-ca82-42f2-a49b-3f43bcae96c9",
+            "id": "12",
+            "meta_info": {
+               "last_visited_desktop": "13201678938479574"
+            },
+            "name": "python 通过麦克风录音 生成wav文件 - coder_ai的博客 - CSDN博客",
+            "sync_transaction_version": "687",
+            "type": "url",
+            "url": "https://blog.csdn.net/coder_ai/article/details/66010493"
+         }, {
+            "date_added": "13189011835561495",
+            "guid": "38494d44-3ff5-4e58-bac8-ef2008978ea6",
+            "id": "13",
+            "meta_info": {
+               "last_visited_desktop": "13199542454439687"
+            },
+            "name": "声音的输入输出 — 用Python做科学计算",
+            "sync_transaction_version": "551",
+            "type": "url",
+            "url": "http://bigsec.net/b52/scipydoc/wave_pyaudio.html#id4"
+         }, {
+            "date_added": "13189087831671512",
+            "guid": "ea05ac01-c6fc-41c5-b302-c5e04b0f48aa",
+            "id": "14",
+            "meta_info": {
+               "last_visited_desktop": "13201964743469795"
+            },
+            "name": "阮一峰的个人网站 - Ruan YiFeng's Personal Website",
+            "sync_transaction_version": "698",
+            "type": "url",
+            "url": "http://www.ruanyifeng.com/home.html"
+         } ],
+         "date_added": "13187684358287639",
+         "date_modified": "13189087831671512",
+         "guid": "00000000-0000-4000-A000-000000000002",
+         "id": "1",
+         "name": "书签栏",
+         "sync_transaction_version": "3",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13162708350000000",
+               "guid": "9d6795f2-a284-4cde-967d-f4d3aec4dc77",
+               "id": "17",
+               "name": "w3school 在线教程",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://www.w3school.com.cn/"
+            }, {
+               "date_added": "13162807537000000",
+               "guid": "11bb3150-1013-43df-a468-9564d4edf118",
+               "id": "18",
+               "name": "Index | Node.js v9.5.0 Documentation",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "https://nodejs.org/docs/latest/api/"
+            }, {
+               "date_added": "13162808349000000",
+               "guid": "aac4d0b3-daa0-4c62-90da-8a145b3ab8aa",
+               "id": "19",
+               "meta_info": {
+                  "last_visited_desktop": "13201964766007883"
+               },
+               "name": "JavaScript 标准参考教程（alpha） -- JavaScript 标准参考教程（alpha）",
+               "sync_transaction_version": "700",
+               "type": "url",
+               "url": "http://javascript.ruanyifeng.com/"
+            }, {
+               "date_added": "13163995614000000",
+               "guid": "b2a51406-79cb-4b6c-8d92-b7d067329d4e",
+               "id": "20",
+               "meta_info": {
+                  "last_visited_desktop": "13191419163729898"
+               },
+               "name": "Linux 系统启动过程 | 菜鸟教程",
+               "sync_transaction_version": "496",
+               "type": "url",
+               "url": "http://www.runoob.com/linux/linux-system-boot.html"
+            }, {
+               "date_added": "13164943107000000",
+               "guid": "8486357e-7fa0-4b2c-a743-801873dc80c5",
+               "id": "21",
+               "name": "glut.dll - 找DLL下载站,dll下载,DLL大全,系统开机提示,DLL文件缺少,free Download,windows DLL - 找DLL下载站",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://www.zhaodll.com/dll/softdown.asp?softid=11948&iz2=ce48ceebd4f1156e6b7cd2f54f31dd77"
+            }, {
+               "date_added": "13165236000000000",
+               "guid": "ad64dcec-16fc-4be5-bcb3-d13533d4808e",
+               "id": "22",
+               "name": "glReadPixels的用法 - 亦舒雪 - 博客园",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "https://www.cnblogs.com/yishuxue/archive/2013/08/21/3272650.html"
+            }, {
+               "date_added": "13165379704000000",
+               "guid": "65c6eea7-cb1b-4234-b190-7d2b97ec96c4",
+               "id": "23",
+               "name": "江南大学考试报名系统 v.1",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://jwbm.jiangnan.edu.cn/index.php/common/login"
+            }, {
+               "date_added": "13168748653000000",
+               "guid": "891a5b73-594d-47df-b39a-bb5a6626a431",
+               "id": "24",
+               "name": "PPT模板下载_免费PPT模板下载_PPT宝藏",
+               "sync_transaction_version": "183",
+               "type": "url",
+               "url": "http://www.pptbz.com/"
+            }, {
+               "date_added": "13171461312000000",
+               "guid": "b3ab0f43-4e2c-411a-bcbf-53f823c0e2f1",
+               "id": "25",
+               "name": "WebGL中文网",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://www.hewebgl.com/article/getarticle/56"
+            }, {
+               "date_added": "13171461322000000",
+               "guid": "abdbd753-2521-42e1-9032-d41209755c5c",
+               "id": "26",
+               "name": "Three.js 现学现卖 - WEB前端 - 伯乐在线",
+               "sync_transaction_version": "53",
+               "type": "url",
+               "url": "http://web.jobbole.com/92335/"
+            }, {
+               "date_added": "13171461328000000",
+               "guid": "6e462457-f5f9-4374-9fc5-1949c0b0aca5",
+               "id": "27",
+               "name": "Three.js - 在线中文文档 - %E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97 - %E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%9C%BA%E6%99%AF(Scene)",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://techbrood.com/threejs/docs/#%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/%E5%85%A5%E9%97%A8%E4%BB%8B%E7%BB%8D/%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%9C%BA%E6%99%AF(Scene)"
+            }, {
+               "date_added": "13172848253000000",
+               "guid": "dc7a9f5a-1970-43c5-b5a6-02505c4c0799",
+               "id": "28",
+               "name": "HTML & CSS - W3C",
+               "sync_transaction_version": "54",
+               "type": "url",
+               "url": "https://www.w3.org/standards/webdesign/htmlcss"
+            }, {
+               "date_added": "13172853567000000",
+               "guid": "212ff157-beec-414a-8551-d2e85f202cb2",
+               "id": "29",
+               "name": "精选项目课程_IT热门课程_实验楼课程 - 实验楼",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "https://www.shiyanlou.com/courses/"
+            }, {
+               "date_added": "13175167229000000",
+               "guid": "f4257fa9-88b4-45f9-9f41-78a3faf28c62",
+               "id": "30",
+               "name": "免费代理IP_HTTP代理服务器IP_隐藏IP_QQ代理_国内外代理_西刺免费代理IP",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://www.xicidaili.com/"
+            }, {
+               "date_added": "13175333968000000",
+               "guid": "c509db19-1a0c-4eba-ba94-b299ed261e55",
+               "id": "31",
+               "name": "SSD VPS Servers, Cloud Servers and Cloud Hosting by Vultr - Vultr.com",
+               "sync_transaction_version": "497",
+               "type": "url",
+               "url": "https://www.vultr.com/"
+            }, {
+               "date_added": "13175417162000000",
+               "guid": "1e83a5a3-dbcf-485e-b777-bef23ebd0296",
+               "id": "32",
+               "name": "首页 - 中国红客联盟 - Powered by HUC",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://www.cnhonkerarmy.com/portal.php"
+            }, {
+               "date_added": "13178118128000000",
+               "guid": "5cbab3e5-d427-4c47-b688-036cf92b5807",
+               "id": "33",
+               "name": "黑客入门完整版教程 - CSDN博客",
+               "sync_transaction_version": "237",
+               "type": "url",
+               "url": "https://blog.csdn.net/hanshou101/article/details/78663896"
+            }, {
+               "date_added": "13178288095000000",
+               "guid": "44955774-3900-4cce-8a25-a7fb771935bf",
+               "id": "34",
+               "name": "Html 特殊符号 - 张龙豪 - 博客园",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "https://www.cnblogs.com/knowledgesea/archive/2013/07/24/3210703.html"
+            }, {
+               "date_added": "13180708973000000",
+               "guid": "7c1ed38a-05f5-4cab-bb8f-70794de496ee",
+               "id": "35",
+               "name": "免费下载缺失的 DLL 文件 | DLL-files.com",
+               "sync_transaction_version": "498",
+               "type": "url",
+               "url": "https://cn.dll-files.com/"
+            }, {
+               "date_added": "13181992349000000",
+               "guid": "de8396e2-0a9a-4034-b3c4-b86680dcd54b",
+               "id": "36",
+               "name": "基于Opencv的人脸检测及识别 - KMsama - 博客园",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "https://www.cnblogs.com/yyagrt/p/7260586.html"
+            }, {
+               "date_added": "13182159488000000",
+               "guid": "c6a7fc92-4905-486d-bb62-7169ced04eed",
+               "id": "37",
+               "name": "PPT模板下载_精品PPT模板下载_风云办公",
+               "sync_transaction_version": "183",
+               "type": "url",
+               "url": "http://ppt.wentu68.cn/fyoffice"
+            }, {
+               "date_added": "13183570206000000",
+               "guid": "35d9e99f-b05a-4f7b-bf5f-ff28ec4c5873",
+               "id": "38",
+               "meta_info": {
+                  "last_visited_desktop": "13191334923037698"
+               },
+               "name": "How to Setup a Python Environment for Machine Learning and Deep Learning with Anaconda",
+               "sync_transaction_version": "336",
+               "type": "url",
+               "url": "https://machinelearningmastery.com/setup-python-environment-machine-learning-deep-learning-anaconda/"
+            }, {
+               "date_added": "13183827061000000",
+               "guid": "32de31de-045d-4e7d-8889-85a77b82e57a",
+               "id": "39",
+               "name": "使用OpenCV和Python进行人脸识别 - 追风的小蚂蚁 - 博客园",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "https://www.cnblogs.com/zhuifeng-mayi/p/9171383.html"
+            }, {
+               "date_added": "13183827093000000",
+               "guid": "9bf46d71-9097-4e9d-be82-959c578d1955",
+               "id": "40",
+               "name": "Linux下Apache的安装与配置_服务器应用_Linux公社-Linux系统门户网站",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "https://www.linuxidc.com/Linux/2016-04/130079.htm"
+            }, {
+               "date_added": "13185182385000000",
+               "guid": "7fe6ef78-2e95-40c5-909b-dca198333be0",
+               "id": "41",
+               "name": "字体,字体下载,PS字体下载,字体设计,字体库,字体下载大全免费_font.chinaz.com",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://font.chinaz.com/index_5.html"
+            }, {
+               "date_added": "13186123958000000",
+               "guid": "5ad8fe2e-a4f0-4181-951c-f3d04595af46",
+               "id": "42",
+               "name": "51单片机温控 - 资料共享 单片机论坛",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://www.51hei.com/bbs/dpj-98201-1.html"
+            }, {
+               "date_added": "13186161218000000",
+               "guid": "98b28d07-8cca-44c9-b95a-ba0875be86c5",
+               "id": "43",
+               "name": "linux下安装python3 - 黄步欢 - 博客园",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "https://www.cnblogs.com/rookie404/p/6142151.html"
+            }, {
+               "date_added": "13186225679000000",
+               "guid": "1ed11f16-60d5-47da-a132-75a9d2d2e909",
+               "id": "44",
+               "meta_info": {
+                  "last_visited_desktop": "13191409700226412"
+               },
+               "name": "解决linux下python多版本兼容问题？ - 问君能有几多愁 - 博客园",
+               "sync_transaction_version": "499",
+               "type": "url",
+               "url": "https://www.cnblogs.com/freely/p/7581074.html"
+            }, {
+               "date_added": "13186402860000000",
+               "guid": "6de0fb94-0af3-40d7-95e9-c377f8c56239",
+               "id": "45",
+               "name": "VS2017专业版使用最新版Qt5.9.2教程（最新教材） - 愿以百年挽朝夕的博客 - CSDN博客",
+               "sync_transaction_version": "48",
+               "type": "url",
+               "url": "https://blog.csdn.net/qq_33154343/article/details/78587699"
+            }, {
+               "date_added": "13187517016000000",
+               "guid": "e9014267-6663-4470-914c-ffae2e6066d3",
+               "id": "46",
+               "name": "超炫线条跟随效果p5.js",
+               "sync_transaction_version": "46",
+               "type": "url",
+               "url": "http://www.jq22.com/code1630"
+            }, {
+               "date_added": "13187517554000000",
+               "guid": "2a4fbe4a-d61c-4400-8e71-9e0d5abeffb2",
+               "id": "47",
+               "meta_info": {
+                  "last_visited_desktop": "13190628580941674"
+               },
+               "name": "常用前端代码",
+               "sync_transaction_version": "316",
+               "type": "url",
+               "url": "http://www.jq22.com/webinfo1"
+            }, {
+               "date_added": "13189436078056379",
+               "guid": "3aca498c-c4ff-477f-8f96-9e58d50dc31d",
+               "id": "48",
+               "meta_info": {
+                  "last_visited_desktop": "13197607266127075"
+               },
+               "name": "小区统计系统",
+               "sync_transaction_version": "471",
+               "type": "url",
+               "url": "http://www.guha28.cn/index"
+            }, {
+               "date_added": "13189448103284836",
+               "guid": "8e9713f2-fb2d-460e-977b-c33939c80a0a",
+               "id": "49",
+               "meta_info": {
+                  "last_visited_desktop": "13189615270763714"
+               },
+               "name": "VPN客户端安装及初次使用说明（Windows系统）-江南大学信息化建设与管理中心",
+               "sync_transaction_version": "221",
+               "type": "url",
+               "url": "http://nic.jiangnan.edu.cn/info/1019/1240.htm"
+            }, {
+               "date_added": "13189615744180527",
+               "guid": "69e53a6a-ec4b-47c2-9131-dc6188d80196",
+               "id": "50",
+               "meta_info": {
+                  "last_visited_desktop": "13189615744180789"
+               },
+               "name": "懒人图库 - 矢量图,JS代码,网页素材 - 学会偷懒，懒出境界！",
+               "sync_transaction_version": "226",
+               "type": "url",
+               "url": "http://www.lanrentuku.com/"
+            }, {
+               "date_added": "13189683864726376",
+               "guid": "83524f60-7e7e-4604-a40b-c7eacd766b18",
+               "id": "51",
+               "meta_info": {
+                  "last_visited_desktop": "13190655951467227"
+               },
+               "name": "极客战记 - 学编程 用玩的",
+               "sync_transaction_version": "325",
+               "type": "url",
+               "url": "https://codecombat.163.com/play"
+            }, {
+               "date_added": "13189703608900871",
+               "guid": "2ae4ac92-d666-48fb-b44c-4de74987f5f0",
+               "id": "52",
+               "meta_info": {
+                  "last_visited_desktop": "13190043386678654"
+               },
+               "name": "极客战记 - 学编程 用玩的",
+               "sync_transaction_version": "285",
+               "type": "url",
+               "url": "https://codecombat.163.com/play/dungeon"
+            }, {
+               "date_added": "13189784433895745",
+               "guid": "42831179-df61-474e-8fa7-d763be02dbeb",
+               "id": "53",
+               "meta_info": {
+                  "last_visited_desktop": "13190194442689381"
+               },
+               "name": "python语音唤醒-pocketsphinx-白话-51CTO博客",
+               "sync_transaction_version": "500",
+               "type": "url",
+               "url": "http://blog.51cto.com/feature09/2300352"
+            }, {
+               "date_added": "13189789561120371",
+               "guid": "4bb88815-2187-4a20-95e6-a08952029d5b",
+               "id": "54",
+               "meta_info": {
+                  "last_visited_desktop": "13190113576741584"
+               },
+               "name": "zouxy09博客原创性博文导航 - zouxy09的专栏 - CSDN博客",
+               "sync_transaction_version": "296",
+               "type": "url",
+               "url": "https://blog.csdn.net/zouxy09/article/details/14222605"
+            }, {
+               "date_added": "13190663667155134",
+               "guid": "80a0f6d9-fadb-4c1f-bb60-a5dfd42ccb34",
+               "id": "55",
+               "meta_info": {
+                  "last_visited_desktop": "13190704422676469"
+               },
+               "name": "pinterest_百度百科",
+               "sync_transaction_version": "332",
+               "type": "url",
+               "url": "https://baike.baidu.com/item/pinterest/6806455?fr=aladdin"
+            }, {
+               "date_added": "13191411293254917",
+               "guid": "937884a6-cbac-4542-84b4-c9cf56dab7f9",
+               "id": "56",
+               "meta_info": {
+                  "last_visited_desktop": "13191518351228873"
+               },
+               "name": "Vmware虚拟机下三种网络模式配置 - uag 的博客 - CSDN博客",
+               "sync_transaction_version": "349",
+               "type": "url",
+               "url": "https://blog.csdn.net/huapenguag/article/details/78283249"
+            }, {
+               "date_added": "13195566994410864",
+               "guid": "cbcb4fb1-89b6-4be7-a468-c53281e375f6",
+               "id": "57",
+               "meta_info": {
+                  "last_visited_desktop": "13195566994411256"
+               },
+               "name": "A Coloring Algorithm for Disambiguating Graph and Map Drawings_超星发现系统",
+               "sync_transaction_version": "358",
+               "type": "url",
+               "url": "http://ss.zhizhen.com/detail_38502727e7500f26a7bf1fa5e0a1affb4d90d4118f9afe5a1921b0a3ea255101c944b624736f9e8530e5f786596ba86df3377951720fa186826100e7fba25f03ad3aaf1392e36e289607d865c7cbcd5f?&apistrclassfy=1_6_6"
+            }, {
+               "date_added": "13196184574415317",
+               "guid": "b117f7ac-fffd-4908-aeae-d8bfabceff17",
+               "id": "58",
+               "meta_info": {
+                  "last_visited_desktop": "13196239592042244"
+               },
+               "name": "2019押题（上） - 写代码啦！",
+               "sync_transaction_version": "367",
+               "type": "url",
+               "url": "https://xiedaimala.com/tasks/e8725b48-630c-4665-a5f6-3b029d275b4b"
+            }, {
+               "date_added": "13196316361178903",
+               "guid": "f1c73819-43f1-400e-9020-dfbd6621c9e5",
+               "id": "59",
+               "meta_info": {
+                  "last_visited_desktop": "13197023670932655"
+               },
+               "name": "Tomcat安装、配置和部署笔记 - 辛伯达 - 博客园",
+               "sync_transaction_version": "449",
+               "type": "url",
+               "url": "https://www.cnblogs.com/purplestone/p/3964207.html"
+            }, {
+               "date_added": "13196335348600339",
+               "guid": "416674aa-bc2f-4387-a020-8ff46344fd46",
+               "id": "60",
+               "meta_info": {
+                  "last_visited_desktop": "13196335348601426"
+               },
+               "name": "微信小程序实现自定义modal弹窗封装的方法_javascript技巧_脚本之家",
+               "sync_transaction_version": "378",
+               "type": "url",
+               "url": "https://www.jb51.net/article/142061.htm"
+            }, {
+               "date_added": "13196335466827544",
+               "guid": "1c5c2005-6204-4c54-99a1-f8756c27447e",
+               "id": "61",
+               "meta_info": {
+                  "last_visited_desktop": "13197024262162780"
+               },
+               "name": "微信小程序学习笔记五（持续更新）---小程序上传文件 - sevenberry - 博客园",
+               "sync_transaction_version": "451",
+               "type": "url",
+               "url": "http://www.cnblogs.com/sevenbreey/p/9845975.html"
+            }, {
+               "date_added": "13196614998454565",
+               "guid": "17f3cd5e-c448-48fe-aa7e-d58e346c5f50",
+               "id": "62",
+               "meta_info": {
+                  "last_visited_desktop": "13197286256832059"
+               },
+               "name": "算法杂货铺——k均值聚类(K-means) - T2噬菌体 - 博客园",
+               "sync_transaction_version": "469",
+               "type": "url",
+               "url": "http://www.cnblogs.com/leoo2sk/archive/2010/09/20/k-means.html"
+            }, {
+               "date_added": "13196682887628411",
+               "guid": "7566251a-69ba-48d6-b8fb-1fa53ff860d7",
+               "id": "63",
+               "meta_info": {
+                  "last_visited_desktop": "13198308198252502"
+               },
+               "name": "机器学习（一）——K-近邻（KNN）算法 - Yabea - 博客园",
+               "sync_transaction_version": "488",
+               "type": "url",
+               "url": "https://www.cnblogs.com/ybjourney/p/4702562.html"
+            }, {
+               "date_added": "13198210015849535",
+               "guid": "accd9b58-1c68-4f19-85f0-7a3940405879",
+               "id": "64",
+               "meta_info": {
+                  "last_visited_desktop": "13203431971367158"
+               },
+               "name": "站酷 (ZCOOL) - 设计师互动平台 - 打开站酷，发现更好的设计！",
+               "sync_transaction_version": "710",
+               "type": "url",
+               "url": "https://www.zcool.com.cn/"
+            }, {
+               "date_added": "13198210993354842",
+               "guid": "5173e1d5-4235-4e84-954a-cfdd2d575c8f",
+               "id": "65",
+               "meta_info": {
+                  "last_visited_desktop": "13198325049163643"
+               },
+               "name": "Cinema 4d | C4DSKY",
+               "sync_transaction_version": "490",
+               "type": "url",
+               "url": "https://c4dsky.com/category/cinema-4d"
+            }, {
+               "date_added": "13198591760091756",
+               "guid": "918fd00e-f0b7-48c2-968a-02d0287a385d",
+               "id": "66",
+               "meta_info": {
+                  "last_visited_desktop": "13201406568197602"
+               },
+               "name": "配色网-致力色彩搭配方案的交流与学习",
+               "sync_transaction_version": "686",
+               "type": "url",
+               "url": "http://www.peise.net/"
+            }, {
+               "date_added": "13199012350365999",
+               "guid": "5aa95bbb-3753-4e05-b342-768943190e41",
+               "id": "67",
+               "meta_info": {
+                  "last_visited_desktop": "13200646793196818"
+               },
+               "name": "Mysql常用命令行大全 - 蓦然回首恍然如梦 - 博客园",
+               "sync_transaction_version": "664",
+               "type": "url",
+               "url": "https://www.cnblogs.com/bluealine/p/7832219.html"
+            }, {
+               "date_added": "13199015166762639",
+               "guid": "7bc2e0b6-5ba2-4658-8de7-0cd67cf35bbd",
+               "id": "68",
+               "meta_info": {
+                  "last_visited_desktop": "13199015166762917"
+               },
+               "name": "BootCDN - Bootstrap 中文网开源项目免费 CDN 加速服务",
+               "sync_transaction_version": "508",
+               "type": "url",
+               "url": "https://www.bootcdn.cn/"
+            }, {
+               "date_added": "13199022935575540",
+               "guid": "7f4555b7-76c8-4583-9ebc-a9c7581c7e15",
+               "id": "69",
+               "meta_info": {
+                  "last_visited_desktop": "13199192310387872"
+               },
+               "name": "Web 开发技术 | MDN",
+               "sync_transaction_version": "534",
+               "type": "url",
+               "url": "https://developer.mozilla.org/zh-CN/docs/Web"
+            }, {
+               "date_added": "13199292384911779",
+               "guid": "bc826c80-76bf-4ff8-8847-d598402377aa",
+               "id": "70",
+               "meta_info": {
+                  "last_visited_desktop": "13200738768635183"
+               },
+               "name": "美食,休闲零食,酒水茶饮,地方特产,保健食品,粮油-当当网",
+               "sync_transaction_version": "682",
+               "type": "url",
+               "url": "http://food.dangdang.com/"
+            }, {
+               "date_added": "13199334867761378",
+               "guid": "4d4d23d0-dd04-4f7a-a773-5255f58441c5",
+               "id": "71",
+               "meta_info": {
+                  "last_visited_desktop": "13199334867761793"
+               },
+               "name": "蜜饯十大品牌_果脯十大品牌_水果干品牌→十大品牌网",
+               "sync_transaction_version": "543",
+               "type": "url",
+               "url": "https://www.china-10.com/china/873mj_index.html"
+            }, {
+               "date_added": "13199416570115990",
+               "guid": "f09ee3a2-081d-4d32-8f3e-37c527f6292e",
+               "id": "72",
+               "meta_info": {
+                  "last_visited_desktop": "13199416570116279"
+               },
+               "name": "十大坚果品牌_坚果干果十大品牌_坚果食品排行榜→十大品牌网",
+               "sync_transaction_version": "546",
+               "type": "url",
+               "url": "https://www.china-10.com/china/871jiang_index.html"
+            }, {
+               "date_added": "13199416612245337",
+               "guid": "444279a1-b117-418b-aeb5-f12f3978f30b",
+               "id": "73",
+               "meta_info": {
+                  "last_visited_desktop": "13199416612245509"
+               },
+               "name": "干果哪个牌子好_2019干果十大品牌_干果名牌大全_百强网",
+               "sync_transaction_version": "549",
+               "type": "url",
+               "url": "https://www.qiang100.com/zhuanti/ganguo.html"
+            }, {
+               "date_added": "13199546674689412",
+               "guid": "da991286-c3de-417c-95f7-26b84e30cdcb",
+               "id": "74",
+               "meta_info": {
+                  "last_visited_desktop": "13199716762678746"
+               },
+               "name": "【前端】前端面试题整理 - 杠子 - 博客园",
+               "sync_transaction_version": "568",
+               "type": "url",
+               "url": "https://www.cnblogs.com/haoyijing/p/5789348.html"
+            }, {
+               "date_added": "13199849044876814",
+               "guid": "881018f8-5c09-43ee-998d-05614d343c00",
+               "id": "75",
+               "meta_info": {
+                  "last_visited_desktop": "13199874213692689"
+               },
+               "name": "Infinite Mountains山脉生成器C4D插件使用教程 - AcFun弹幕视频网 - 认真你就输啦 (?ω?)ノ- ( ゜- ゜)つロ",
+               "sync_transaction_version": "576",
+               "type": "url",
+               "url": "http://www.acfun.cn/v/ac4774463"
+            }, {
+               "date_added": "13199874763204278",
+               "guid": "1626cc98-7aef-4f94-ae70-c830eff247d1",
+               "id": "76",
+               "meta_info": {
+                  "last_visited_desktop": "13199960469283629"
+               },
+               "name": "Iconfont-阿里巴巴矢量图标库",
+               "sync_transaction_version": "584",
+               "type": "url",
+               "url": "https://www.iconfont.cn/collections/detail?spm=a313x.7781069.1998910419.d9df05512&cid=16051"
+            }, {
+               "date_added": "13199979838843822",
+               "guid": "0bd5a0c2-5cbd-45f8-96cd-a51c3436abdb",
+               "id": "77",
+               "meta_info": {
+                  "last_visited_desktop": "13200024624754329"
+               },
+               "name": "前端网（QDFuns） WEB前端开发工程师专业网站，一站式服务平台！",
+               "sync_transaction_version": "591",
+               "type": "url",
+               "url": "https://www.qdfuns.com/"
+            }, {
+               "date_added": "13200565052839083",
+               "guid": "f1807a95-b35c-4b77-82f2-279c19748851",
+               "id": "78",
+               "meta_info": {
+                  "last_visited_desktop": "13200720318353557"
+               },
+               "name": "Maya! Board - Powered by Discuz!",
+               "sync_transaction_version": "674",
+               "type": "url",
+               "url": "http://www.mayafens.com/index.php"
+            }, {
+               "date_added": "13200634441876637",
+               "guid": "95624ef2-7b5d-42da-ad8c-857dde76564d",
+               "id": "79",
+               "meta_info": {
+                  "last_visited_desktop": "13200634441877221"
+               },
+               "name": "C4DSKY|书生最新最全影视CG资源分享站",
+               "sync_transaction_version": "660",
+               "type": "url",
+               "url": "https://c4dsky.com/"
+            }, {
+               "date_added": "13200649281695692",
+               "guid": "0043795e-c96e-4cda-a631-a77cae7103d8",
+               "id": "80",
+               "meta_info": {
+                  "last_visited_desktop": "13203843623286575"
+               },
+               "name": "CDA考试系统_CDA考试介绍_CDA报名须知_CDA证书查询",
+               "sync_transaction_version": "711",
+               "type": "url",
+               "url": "https://exam.cda.cn/cda_kaoshi.php?ac=reg&zc_id=1"
+            }, {
+               "date_added": "13201713820792919",
+               "guid": "7834c6e2-fe16-4d09-ad08-3f3292c91a00",
+               "id": "81",
+               "meta_info": {
+                  "last_visited_desktop": "13201713820794040"
+               },
+               "name": "Vue.js经典开源项目汇总 – HTML5梦工场",
+               "sync_transaction_version": "691",
+               "type": "url",
+               "url": "http://www.html5dw.com/post/5570"
+            }, {
+               "date_added": "13201884752581369",
+               "guid": "56917c1d-53b1-404c-97f1-d7b13f55e08f",
+               "id": "82",
+               "meta_info": {
+                  "last_visited_desktop": "13201926476084216"
+               },
+               "name": "animate.css的使用 - 小火柴的蓝色理想 - 博客园",
+               "sync_transaction_version": "697",
+               "type": "url",
+               "url": "https://www.cnblogs.com/xiaohuochai/p/7372665.html#anchor2"
+            }, {
+               "date_added": "13204408770553075",
+               "guid": "7ede0486-b0a0-4230-aeca-5db14d7a454f",
+               "id": "83",
+               "meta_info": {
+                  "last_visited_desktop": "13204447872956809"
+               },
+               "name": "proxool-cglib-0.9.1.jar 开源项目介绍/下载 - MvnJar",
+               "sync_transaction_version": "715",
+               "type": "url",
+               "url": "https://www.mvnjar.com/com.cloudhopper.proxool/proxool-cglib/0.9.1/detail.html"
+            }, {
+               "date_added": "13205408463494868",
+               "guid": "84cb4ebc-73ac-472c-817c-29d1ca301a7b",
+               "id": "84",
+               "meta_info": {
+                  "last_visited_desktop": "13205651326869076"
+               },
+               "name": "IT桔子 | 泛互联网创业投资项目信息数据库及商业信息服务商",
+               "sync_transaction_version": "725",
+               "type": "url",
+               "url": "https://www.itjuzi.com/"
+            }, {
+               "date_added": "13222972021886384",
+               "guid": "5006c6bf-7dc1-42e5-b1fe-3ded08700dce",
+               "id": "85",
+               "name": "题库 - 力扣 (LeetCode) 全球极客挚爱的技术成长平台",
+               "type": "url",
+               "url": "https://leetcode-cn.com/problemset/algorithms/"
+            }, {
+               "date_added": "13223055311236262",
+               "guid": "1685570c-3af3-437d-a85a-941a1681924d",
+               "id": "86",
+               "name": "经济学教材书单",
+               "type": "url",
+               "url": "https://www.douban.com/doulist/3546621/"
+            }, {
+               "date_added": "13226982401968879",
+               "guid": "64668130-2cfa-4b78-8f28-03a72a026a19",
+               "id": "87",
+               "name": "后端 | 大专栏",
+               "type": "url",
+               "url": "https://www.dazhuanlan.com/backend/"
+            }, {
+               "date_added": "13227256294038601",
+               "guid": "32847888-3a76-4f89-834b-9a1b41ea44c1",
+               "id": "88",
+               "name": "Java基础知识面试题（2020最新版）_数据库_ThinkWon的博客-CSDN博客",
+               "type": "url",
+               "url": "https://blog.csdn.net/ThinkWon/article/details/104390612"
+            }, {
+               "date_added": "13227631160518047",
+               "guid": "502ee646-985a-42fe-ad70-50c00166774b",
+               "id": "89",
+               "name": "搞定Java SSM框架开发_学习路径_慕课网",
+               "type": "url",
+               "url": "http://www.imooc.com/course/programdetail/pid/59/"
+            }, {
+               "date_added": "13229165626532174",
+               "guid": "a67b63d7-a4e4-426e-92fd-fbcb57563974",
+               "id": "94",
+               "name": "源码之家 - 提供最新免费网站源码下载！",
+               "type": "url",
+               "url": "https://www.mycodes.net/"
+            }, {
+               "date_added": "13229252838300676",
+               "guid": "3efd5296-6829-4903-9cb3-bac43c7befe4",
+               "id": "96",
+               "name": "Analyzer在线工具，IK Analyzer—在线分词器工具",
+               "type": "url",
+               "url": "https://www.sojson.com/analyzer"
+            }, {
+               "date_added": "13229863207832378",
+               "guid": "2f60a95f-1fb8-4a11-aed7-3deaddacfab4",
+               "id": "98",
+               "name": "【头号否】千图网素材无水印原图免登陆免费下载",
+               "type": "url",
+               "url": "https://greasyfork.org/zh-CN/scripts/397072-%E5%A4%B4%E5%8F%B7%E5%90%A6-%E5%8D%83%E5%9B%BE%E7%BD%91%E7%B4%A0%E6%9D%90%E6%97%A0%E6%B0%B4%E5%8D%B0%E5%8E%9F%E5%9B%BE%E5%85%8D%E7%99%BB%E9%99%86%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD"
+            }, {
+               "date_added": "13230092440691847",
+               "guid": "01f8bdc0-718e-4569-90f9-3b2657b53ff4",
+               "id": "100",
+               "name": "网络安全课程|网络安全视频课程|网络安全培训课程|信息安全培训教程-i春秋",
+               "type": "url",
+               "url": "https://www.ichunqiu.com/opencourse"
+            }, {
+               "date_added": "13230119138774607",
+               "guid": "ee08209d-728d-403a-9490-dd407d9e256e",
+               "id": "101",
+               "name": "蓝菊花搜索",
+               "type": "url",
+               "url": "http://www.lanjuhua.com/"
+            }, {
+               "date_added": "13230119856090974",
+               "guid": "52ea42bc-b636-4506-8fd9-854032dcca86",
+               "id": "102",
+               "name": "网盘搜索,就上盘搜搜 - 好用的百度云搜索引擎",
+               "type": "url",
+               "url": "https://www.pansoso.com/"
+            } ],
+            "date_added": "13187685724001507",
+            "date_modified": "13230119856090974",
+            "guid": "4c34454a-0c66-4a3b-984b-44814065642d",
+            "id": "16",
+            "name": "其他书签",
+            "sync_transaction_version": "59",
+            "type": "folder"
+         }, {
+            "date_added": "13188315485817547",
+            "guid": "58bfbaeb-03b9-4324-835e-1cd95a83d463",
+            "id": "90",
+            "name": "[转]qt中文乱码问题 - ZYVV - 博客园",
+            "sync_transaction_version": "495",
+            "type": "url",
+            "url": "https://www.cnblogs.com/wlzy/p/7353749.html"
+         } ],
+         "date_added": "13187684358287652",
+         "date_modified": "13188555758371113",
+         "guid": "00000000-0000-4000-A000-000000000003",
+         "id": "15",
+         "name": "其他书签",
+         "sync_transaction_version": "3",
+         "type": "folder"
+      },
+      "sync_transaction_version": "725",
+      "synced": {
+         "children": [  ],
+         "date_added": "13187684358287655",
+         "date_modified": "0",
+         "guid": "00000000-0000-4000-A000-000000000004",
+         "id": "91",
+         "name": "移动设备书签",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

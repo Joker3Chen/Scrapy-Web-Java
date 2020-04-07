@@ -1,0 +1,66 @@
+{
+   "checksum" : "a5addf762c6cb5c929a18f23b9bdc4af",
+   "roots" : {
+      "bookmark_bar" : {
+         "children" : [
+            {
+               "date_added" : "1",
+               "id" : "0",
+               "name" : "百度",
+               "type" : "url",
+               "url" : "http://2143.new.favo.xpu93.com/"
+            },
+            {
+               "date_added" : "1",
+               "id" : "0",
+               "name" : "淘宝",
+               "type" : "url",
+               "url" : "http://2294.new.favo.xpu93.com/"
+            },
+            {
+               "date_added" : "1",
+               "id" : "0",
+               "name" : "京东",
+               "type" : "url",
+               "url" : "http://2147.new.favo.xpu93.com/"
+            },
+            {
+               "date_added" : "1",
+               "id" : "0",
+               "name" : "天猫",
+               "type" : "url",
+               "url" : "http://2145.new.favo.xpu93.com/"
+            },
+            {
+               "date_added" : "1",
+               "id" : "0",
+               "name" : "苏宁易购",
+               "type" : "url",
+               "url" : "http://1970.new.favo.xpu93.com/"
+            }
+         ],
+         "date_added" : "13202311155881610",
+         "date_modified" : "0",
+         "id" : "1",
+         "name" : "书签栏",
+         "type" : "folder"
+      },
+      "other" : {
+         "children" : [],
+         "date_added" : "13202311155881615",
+         "date_modified" : "0",
+         "id" : "2",
+         "name" : "其他书签",
+         "type" : "folder"
+      },
+      "synced" : {
+         "children" : [],
+         "date_added" : "13202311155881616",
+         "date_modified" : "0",
+         "id" : "3",
+         "name" : "移动设备书签",
+         "type" : "folder"
+      }
+   },
+   "version" : 1
+}

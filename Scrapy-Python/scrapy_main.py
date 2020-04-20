@@ -1,15 +1,14 @@
-from scrapy_module import brower_scrapy
+#coding=utf-8
+from scrapy_module import request_scrapy
+from filter_module import filter_links
 
 if __name__ == "__main__":
-    options = {"--user-data-dir=" + r"./src/config"}
-    realm = r"http://www.baidu.com"
-    route = r"/s?wd=健康"
-    dirver_path = r"./src/chromedriver.exe"
+    html_path = "./src/data/39health/temp_html/html1.html"
+    
+    rs = request_scrapy("http://www.39.net", encoding="gbk")
+    r = rs.get_response()
+    rs.download_html(html_path)
 
-    bs = brower_scrapy(options)
-    bs.run_brower(dirver_path)
-    bs.open_new_page(realm, route)
-    elements_list = bs.find_elements_by_class_and_tag_name("t", "a")
-
-    print(elements_list)
-    pass
+    fl = filter_links(html_path)
+    fl.analyse_html()
+    fl.find_links_by_RegEx("^http:\/\/.{0,10}\.39\.net\/?$", 0)

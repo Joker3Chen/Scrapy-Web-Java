@@ -13,53 +13,51 @@ class manager_download:
     # @function 初始化类，设置成员变量
     # @parm(temp_html_path) 暂存html页面的路径
     # @parm(tag_html_path) 目标html页面的路径
-    def __init__(self, url, temp_html_path = None, tag_html_path = None):
+    def __init__(self, url, html_path, encoding="utf-8"):
         super().__init__()
-        if(temp_html_path == None or tag_html_path == None):
-            print("Warning : the input is wrong, please input again.")
         print("\n--------------------")
-        self.scrapy = request_scrapy()
+        self.encode = encoding
+        self.scrapy = request_scrapy(encoding=self.encode)
         self.filter = None
-        self.temp_path = temp_html_path
-        self.tag_path = tag_html_path
-        
-        self.links_tree = Tree(url)
+
+        # 临时链接，构建栈结构，通过广度遍历算法构建树
         self.temp_links = []
-        self.current_node = self.links_tree
+        self.temp_links.append(url)
+        self.html_path = html_path
 
         self.R = threading.Lock()
         print("manager_download初始化成功...")
 
-    # @function 分类下载html页面
-    
-    def sort_download_htmls(self):
-        self.R.acquire()
-        #下载网页
-        link = self.current_node.get_node_content()
-        self.scrapy.get_response(link)
-        self.scrapy.download_html(self.temp_path)
+    # @function 回收类，删除成员变量
+    def __del__(self):
+        del self.scrapy
+        del self.filter
+        del self.temp_links
+        del self.html_path
+        del self.R
 
-        #创建网页对应目录
-        download_path = self.temp_path + "/" + link
-        os.mkdir(download_path)
+    # @function 构建树的过程就是网站爬取的过程（关键算法）
+    # @parm(temp_link_RegEx) 
+    # @parm(tag_link_RegEx) 
+    def sort_download_htmls(self, temp_link_RegEx, tag_link_RegEx):
+        # 栈中取出待爬取网页地址
+        current_link = self.temp_links.pop()
 
-        #过滤网页中链接
-        self.filter = filter_links(self.temp_path)
-        self.filter.find_links_by_RegEx("^http:\/\/.{0,10}\.39\.net\/?$", 0)
+        while(len(self.temp_links) >= 0):
+            temp_html = self.scrapy.get_response(current_link)
 
+            self.filter = filter_links(temp_html, encoding=self.encode)
+            self.filter.find_links_by_RegEx(temp_link_RegEx, tag_link_RegEx)
 
-        self.R.release()
+            for temp_link in self.filter.get_temp_links():
+                self.temp_links.append(temp_link)
+            for tag_link in self.filter.get_tag_links():
+                #下载路径、格式
+                self.scrapy.get_response(tag_link)
+                self.scrapy.download_html(self.html_path)
 
-    # @function 分类存储链接，存储在temp_links和tag_links中
-    def sort_links(self):
-        self.scrapy.get_response()
-        self.scrapy.download_html()
-        pass
+            current_link = self.temp_links.pop()
 
 class manager_thread:
-
-    '''
-    协调线程与爬虫的关系
-    '''
     def __init__(self):
         super().__init__()

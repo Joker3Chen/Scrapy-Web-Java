@@ -12,7 +12,7 @@ class Tree:
         super().__init__()
         self.content = content
         self.childTree = []
-    
+
     # @function 回收类，删除成员变量
     def __del__(self):
         del self.content
@@ -22,14 +22,21 @@ class Tree:
     # @parm(content) String 子节点内容
     def insert_node(self, content):
         self.childTree.append(Tree(content))
-    
+
     # @function 根据索引，删除子节点
     # @parm(index) Number(integer) 索引号
     def delete_node_by_index(self, index):
         return self.childTree.pop(index)
 
+    # @function 获取节点信息
+    # @return String
     def get_node_content(self):
         return self.content
+
+    # @function 获取所有子节点
+    # @return List
+    def get_all_childnode(self):
+        return self.childTree
 
 class Graph:
     def __init__(self):

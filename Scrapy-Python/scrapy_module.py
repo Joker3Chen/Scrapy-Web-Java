@@ -90,6 +90,7 @@ class request_scrapy:
         self.headers = headers
         self.data = data
         self.encoding = encoding
+        self.html = None
         print("request_scrapy初始化成功...")
 
     # @function 回收类，删除成员变量
@@ -105,10 +106,10 @@ class request_scrapy:
     # @function 向服务器发起请求，并获得response
     # @parm(flag) Number 请求方式标记，默认为get()
     def get_response(self, url = None, flag=0):
-        if(self.url is not None):
-            url = self.url
-        elif(url == None):
+        if(url == None and self.url == None):
             print("Warning: the url is None.")
+        else:
+            self.url = url
         print("开始发送请求...")
         if(flag == 0):
             self.response = requests.get(self.url, self.parms)
@@ -116,12 +117,15 @@ class request_scrapy:
             self.response = requests.post(self.url, self.data)
         print("收到response，状态码：" + str(self.response.status_code))
         #设置html文件编码
-        self.response.encoding = self.encoding
+        self.html = self.response.content.decode("gb18030")
+        return self.response
 
     # @function 页面下载到本地，存储为html文件
     # @parm(html_path) 文件下载路径
     def download_html(self, html_path):
         print("开始下载页面：" + self.url)
-        file = open(html_path + "/" + self.url + ".html", "a")
-        file.write(self.response.text)
+        temp_ = self.url.split("/")
+        file_name = temp_[len(temp_)-2]+temp_[len(temp_)-1]
+        file = open(html_path + "/" + file_name, "a")
+        file.write(self.html)
         print("页面下载完成...")

@@ -1,14 +1,11 @@
 #coding=utf-8
-from scrapy_module import request_scrapy
-from filter_module import filter_links
-
+from manager_module import manager_download
+import sys
+# 程序入口
 if __name__ == "__main__":
-    html_path = "./src/data/39health/temp_html/html1.html"
-    
-    rs = request_scrapy("http://www.39.net", encoding="gbk")
-    r = rs.get_response()
-    rs.download_html(html_path)
-
-    fl = filter_links(html_path)
-    fl.analyse_html()
-    fl.find_links_by_RegEx("^http:\/\/.{0,10}\.39\.net\/?$", 0)
+    url = "http://www.39.net"
+    html_path = "./src/data/39health"
+    temp_RegEx = "^https?:\/\/.{0,10}\.39\.net\/?$"
+    tag_RegEx = "^https?:\/\/\w{1,10}\.39\.net\/.*\/[0-9]*\.html$"
+    md = manager_download(url, html_path, encoding=sys.getdefaultencoding())
+    md.sort_download_htmls(temp_RegEx, tag_RegEx)

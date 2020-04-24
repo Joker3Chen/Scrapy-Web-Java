@@ -2,6 +2,7 @@
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
 import requests
+import chardet as cd
 
 class brower_scrapy:
     '''
@@ -116,8 +117,7 @@ class request_scrapy:
         elif(flag == 1):
             self.response = requests.post(self.url, self.data)
         print("收到response，状态码：" + str(self.response.status_code))
-        #设置html文件编码
-        self.html = self.response.content.decode("gb18030")
+
         return self.response
 
     # @function 页面下载到本地，存储为html文件
@@ -126,6 +126,13 @@ class request_scrapy:
         print("开始下载页面：" + self.url)
         temp_ = self.url.split("/")
         file_name = temp_[len(temp_)-2]+temp_[len(temp_)-1]
-        file = open(html_path + "/" + file_name, "a")
-        file.write(self.html)
+        with open(html_path + "/" + file_name, "ba") as file:
+            file.write(self.response.content)
         print("页面下载完成...")
+    
+    # @function 下载页面元素
+    # @parm() 
+    def download_tag_by_classes(self, classes=None):
+        if(classes == None):
+            pass
+        

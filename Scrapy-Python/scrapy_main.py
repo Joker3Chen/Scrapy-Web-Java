@@ -8,4 +8,4 @@ if __name__ == "__main__":
     temp_RegEx = "^https?:\/\/.{0,10}\.39\.net\/?$"
     tag_RegEx = "^https?:\/\/\w{1,10}\.39\.net\/.*\/[0-9]*\.html$"
     md = manager_download(url, html_path, encoding=sys.getdefaultencoding())
-    md.sort_download_htmls(temp_RegEx, tag_RegEx)
+    md.download_tag_htmls(temp_RegEx, tag_RegEx)

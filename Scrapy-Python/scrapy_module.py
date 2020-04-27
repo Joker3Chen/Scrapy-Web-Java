@@ -129,10 +129,3 @@ class request_scrapy:
         with open(html_path + "/" + file_name, "ba") as file:
             file.write(self.response.content)
         print("页面下载完成...")
-    
-    # @function 下载页面元素
-    # @parm() 
-    def download_tag_by_classes(self, classes=None):
-        if(classes == None):
-            pass
-        

@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from scrapy_module import request_scrapy
-from filter_module import filter_links
+from filter_module import filter_links, filter_tags
 
 from PyQt5.QtWidgets import (QApplication, QWidget, QMainWindow, QToolBar, QStyleOptionMenuItem, QAction, QStyleOptionToolBar ,QGridLayout, QPushButton, QToolTip)
 from PyQt5.QtGui import QIcon, QColor
@@ -13,55 +13,95 @@ class manager_download:
     管理下载文件
     '''
 
-    # @function 初始化类，设置成员变量
-    # @parm(temp_html_path) 暂存html页面的路径
-    # @parm(tag_html_path) 目标html页面的路径
-    def __init__(self, url, html_path, encoding="utf-8"):
+    # @function 初始化类，设置成员变量.
+    # @parm(temp_html_path) 暂存html页面的路径.
+    # @parm(tag_html_path) 目标html页面的路径.
+    def __init__(self, url, encoding="utf-8"):
         super().__init__()
         print("\n--------------------")
         self.encode = encoding
         self.scrapy = request_scrapy(encoding=self.encode)
-        self.filter = None
 
         # 临时链接，构建栈结构，通过广度遍历算法构建树
-        self.temp_links = []
-        self.temp_links.append(url)
-        self.html_path = html_path
+        self.tag_links = list()
+        self.temp_links = list((url,))
 
         print("manager_download初始化成功...")
 
-    # @function 回收类，删除成员变量
+    # @function 回收类，删除成员变量.
     def __del__(self):
         del self.scrapy
-        del self.filter
+        del self.tag_links
         del self.temp_links
-        del self.html_path
 
-    # @function 下载目标网页的内容
-    # @parm(temp_link_RegEx) 中间网页的正则表达式
-    # @parm(tag_link_RegEx) 目标网页的正则表达式
-    def download_tag_htmls(self, temp_link_RegEx, tag_link_RegEx):
+    # @function 下载目标网页的内容.
+    # @parm(temp_link_RegEx) 中间网页链接的正则表达式.
+    # @parm(tag_link_RegEx) 目标网页链接的正则表达式.
+    def find_tag_links(self, temp_link_RegEx, tag_link_RegEx):
         # 栈中取出待爬取网页地址
         current_link = self.temp_links.pop()
+
+        if(len(current_link) <= 0):
+            print("Warning: the root url is NONE.")
+            return
 
         while(len(self.temp_links) >= 0):
             temp_html = self.scrapy.get_response(current_link)
 
-            self.filter = filter_links(temp_html, encoding=self.encode)
-            self.filter.find_links_by_RegEx(temp_link_RegEx, tag_link_RegEx)
+            filter = filter_links(temp_html, encoding=self.encode)
+            filter.find_links_by_RegEx(temp_link_RegEx, tag_link_RegEx)
 
-            for temp_link in self.filter.get_temp_links():
+            for temp_link in filter.get_temp_links():
                 self.temp_links.append(temp_link)
-            for tag_link in self.filter.get_tag_links():
-                #下载路径、格式
-                self.scrapy.get_response(tag_link)
-                self.scrapy.download_html(self.html_path)
+            for tag_link in filter.get_tag_links():
+                self.tag_links.append(tag_link)
 
             current_link = self.temp_links.pop()
+
+        # 去重
+        self.tag_links = list(set(self.tag_links))
+    
+    # @function 下载目标链接的网页.
+    # @html_path html页面存入的路径.
+    def download_htmls_by_links(self, html_path = None):
+        if(len(self.tag_links) <= 0):
+            print("Warning: please check the use of find_tag_links().")
+            return
+        if(html_path == None):
+            print("Warning: the parm html_path is None.")
+            return
+        current_link = self.tag_links.pop()
+        while(len(self.tag_links) >= 0):
+            self.scrapy.get_response(current_link)
+            self.scrapy.download_html(html_path)
+
+    # @function 下载目标链接上的元素，存入数据库.
+    # @parm(tag_info) Dict 下载目标链接的元素信息，包括tag_name, class, id.
+    def download_tag_names_by_links(self, tag_info={"tag_name":[], "class":[], "id":[]}):
+        if(len(self.tag_links) <= 0):
+            print("Warning: please check the use of find_tag_links().")
+            return
+        if(len(tag_info["tag_name"]) <= 0):
+            print("Warning: the tag_info is NONE.")
+            return
+
+        current_link = self.tag_links.pop()
+        while(len(self.tag_links) >= 0):
+            response = self.scrapy.get_response(current_link)
+            filter = filter_tags(response)
+            filter.find_tags_by_ids()
+        pass
 
 class manager_thread:
     '''
     管理线程的创建及使用
+    '''
+    def __init__(self):
+        super().__init__()
+
+class manager_database:
+    '''
+    管理数据库的连接
     '''
     def __init__(self):
         super().__init__()

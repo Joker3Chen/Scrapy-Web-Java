@@ -1,4 +1,4 @@
-#coding=utf-8
+# -*- coding: utf-8 -*-
 import global_module
 from bs4 import BeautifulSoup
 import re

@@ -1,4 +1,4 @@
-#coding=utf-8
+# -*- coding: utf-8 -*-
 from manager_module import manager_download
 import sys
 # 程序入口

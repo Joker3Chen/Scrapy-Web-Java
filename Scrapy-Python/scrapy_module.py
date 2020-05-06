@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions
+import time
 import requests
 import chardet as cd
 
@@ -88,9 +89,13 @@ class request_scrapy:
         print("\n--------------------")
         self.url = url
         self.parms = parms
-        self.headers = headers
         self.data = data
         self.encoding = encoding
+
+        self.session = requests.session()
+        self.session.headers = headers
+        self.session.keep_alive = False
+
         self.html = None
         print("request_scrapy初始化成功...")
 
@@ -112,13 +117,18 @@ class request_scrapy:
         else:
             self.url = url
         print("开始发送请求...")
-        if(flag == 0):
-            self.response = requests.get(self.url, self.parms)
-        elif(flag == 1):
-            self.response = requests.post(self.url, self.data)
-        print("收到response，状态码：" + str(self.response.status_code))
+        print("现在时间是："+time.strftime('%Y-%m-%d %H:%M:%S'))
+        try:
+            if(flag == 0):
+                self.response = self.session.get(self.url)
+            elif(flag == 1):
+                self.response = self.session.post(self.url, self.data)
+            print("收到response，状态码：" + str(self.response.status_code))
+            return self.response
+        except requests.RequestException as e:
+            print(e)
+            return None
 
-        return self.response
 
     # @function 页面下载到本地，存储为html文件
     # @parm(html_path) 文件下载路径

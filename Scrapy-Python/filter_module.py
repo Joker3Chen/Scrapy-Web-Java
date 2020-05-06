@@ -82,15 +82,19 @@ class filter_tags:
 
     # @function 根据类名、标签、id选择标签
     # @parm(ids) String 需要选择的标签id
-    def find_tags_by_ids(self, ids=None):
-        if(ids == None):
+    def find_tags_by_id(self, id_=None):
+        if(id_ == None):
             print("Warning: please input again.")
             return
-        current_id = ids.pop()
-        while(len(ids) >= 0):
-            for tag in self.soup.find(id=current_id):
-                self.result_json.update(dict(current_id, tag.text))
-            current_id = ids.pop()
+        if(len(self.result_json) <= 0):
+            for tag in self.soup.find(id=id_):
+                self.result_json.update(dict({id_:tag.text}))
+    
+    def find_tags_by_class(self, class_=None):
+        if(class_ == None):
+            print("Warning: please input again.")
+            return
+        return self.soup.find()
 
     def get_result_json(self):
         return self.result_json

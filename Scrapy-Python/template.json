@@ -1,16 +1,18 @@
 {
-    "data-length":0,
-    "data": [{
-        "id": 0,
-        "source-site": "",
-        "article": {
-            "title": "",
-            "author": "",
-            "date": "",
-            "text": "",
-            "sort": "",
-            "key": []
-        },
-        "date":""
-    }]
+    "data-length": 0,
+    "source-site": "",
+    "data": [
+        {
+            "id": 0,
+            "article": {
+                "title": "",
+                "author": "",
+                "date": "",
+                "text": "",
+                "sort": "",
+                "key": []
+            },
+            "time": ""
+        }
+    ]
 }

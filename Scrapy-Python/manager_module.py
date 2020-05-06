@@ -5,6 +5,7 @@ from filter_module import filter_links, filter_tags
 from PyQt5.QtWidgets import (QApplication, QWidget, QMainWindow, QToolBar, QStyleOptionMenuItem, QAction, QStyleOptionToolBar ,QGridLayout, QPushButton, QToolTip)
 from PyQt5.QtGui import QIcon, QColor
 from PyQt5.QtCore import Qt, QSize
+from pymongo import MongoClient
 import threading
 import sys
 
@@ -16,11 +17,11 @@ class manager_download:
     # @function 初始化类，设置成员变量.
     # @parm(temp_html_path) 暂存html页面的路径.
     # @parm(tag_html_path) 目标html页面的路径.
-    def __init__(self, url, encoding="utf-8"):
+    def __init__(self, url, encoding="utf-8", headers=None):
         super().__init__()
         print("\n--------------------")
         self.encode = encoding
-        self.scrapy = request_scrapy(encoding=self.encode)
+        self.scrapy = request_scrapy(encoding=self.encode,headers=headers)
 
         # 临时链接，构建栈结构，通过广度遍历算法构建树
         self.tag_links = list()
@@ -40,26 +41,41 @@ class manager_download:
     def find_tag_links(self, temp_link_RegEx, tag_link_RegEx):
         # 栈中取出待爬取网页地址
         current_link = self.temp_links.pop()
-
+        
         if(len(current_link) <= 0):
             print("Warning: the root url is NONE.")
             return
+        
+        used_links = list()
 
         while(len(self.temp_links) >= 0):
             temp_html = self.scrapy.get_response(current_link)
+            
 
-            filter = filter_links(temp_html, encoding=self.encode)
-            filter.find_links_by_RegEx(temp_link_RegEx, tag_link_RegEx)
+            if(temp_html != None):
+                filter = filter_links(temp_html, encoding=self.encode)
+                filter.find_links_by_RegEx(temp_link_RegEx, tag_link_RegEx)
 
-            for temp_link in filter.get_temp_links():
-                self.temp_links.append(temp_link)
-            for tag_link in filter.get_tag_links():
-                self.tag_links.append(tag_link)
+                for temp_link in filter.get_temp_links():
+                    if(current_link is in used_links):
+                        self.temp_links.append(temp_link)
+                #去重
+                self.temp_links = list(set(self.temp_links))
 
-            current_link = self.temp_links.pop()
+                for tag_link in filter.get_tag_links():
+                    self.tag_links.append(tag_link)
+                #去重
+                self.tag_links = list(set(self.tag_links))
 
-        # 去重
-        self.tag_links = list(set(self.tag_links))
+            used_links.append(current_link)
+            current_link = self.temp_links.pop() 
+            print(type(self.temp_links))
+            print(len(self.tag_links))
+            #有待改进
+            if(len(self.tag_links) % 2001 >= 1500):
+                links_csv = open("./src/data/39health/links.csv", "w")
+                for link in self.tag_links:
+                    links_csv.write(link+"\n")
     
     # @function 下载目标链接的网页.
     # @html_path html页面存入的路径.
@@ -103,8 +119,14 @@ class manager_database:
     '''
     管理数据库的连接
     '''
-    def __init__(self):
+    def __init__(self, URI="mongodb://localhost:27017", database="admin"):
         super().__init__()
+
+        self.mongo_client = MongoClient(URI)
+        self.db = self.mongo_client[database]
+    
+    def insert_data_to_collection(self):
+        pass
 
 class manager_gui():
     '''
